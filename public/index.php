@@ -14,6 +14,6 @@ $app->addRoutingMiddleware();
 $errorMiddleware = $app->addErrorMiddleware(true, true, true);
 
 // Load routes from a separate file.
-(require __DIR__ . '/../src/routes.php')($app);
+(require __DIR__ . '/src/routes.php')($app);
 
 $app->run();
